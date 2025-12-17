@@ -1,0 +1,69 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "IPRO SurGard",
+        "description": "Поднимет TCP-приёмник Contact ID / SurGard и будет динамически создавать сущности по мере прихода событий.",
+        "data": {
+          "listen_host": "Адрес прослушивания (host)",
+          "listen_port": "Порт прослушивания",
+          "max_zones": "Макс. номер зоны (для zone_* сущностей)",
+          "offline_timeout": "Таймаут оффлайн (сек)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Интеграция уже настроена."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Настройки IPRO SurGard",
+        "data": {
+          "listen_host": "Адрес прослушивания",
+          "listen_port": "Порт прослушивания",
+          "max_zones": "Макс. число зон",
+          "offline_timeout": "Таймаут «offline» (сек)",
+          "sms_enable": "SMS через GOIP4",
+          "sms_line": "Линия GOIP4",
+          "sms_phone": "Номер телефона",
+          "sms_msg_arm": "Сообщение при постановке",
+          "sms_msg_disarm": "Сообщение при снятии",
+          "sms_cooldown": "Антиспам (сек)",
+          "sms_object_filter": "Фильтр Object ID (необязательно)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "last_event_text": {
+        "name": "Последнее событие"
+      },
+      "last_event_raw": {
+        "name": "Последнее событие (raw)"
+      },
+      "last_event_code": {
+        "name": "Код последнего события"
+      }
+    },
+    "binary_sensor": {
+      "connection": {
+        "name": "Связь"
+      },
+      "alarm": {
+        "name": "Тревога"
+      },
+      "fire": {
+        "name": "Пожар"
+      },
+      "panic": {
+        "name": "Паника"
+      },
+      "armed": {
+        "name": "Охрана"
+      }
+    }
+  }
+}

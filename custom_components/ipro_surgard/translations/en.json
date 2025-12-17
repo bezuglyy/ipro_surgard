@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "IPRO SurGard",
+        "description": "Starts a TCP Contact ID / SurGard receiver and dynamically creates entities as events arrive.",
+        "data": {
+          "listen_host": "Listen host",
+          "listen_port": "Listen port",
+          "max_zones": "Max zone number",
+          "offline_timeout": "Offline timeout (sec)"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Integration is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "IPRO SurGard options",
+        "data": {
+          "listen_host": "Listen host",
+          "listen_port": "Listen port",
+          "max_zones": "Max zones",
+          "offline_timeout": "Offline timeout (s)",
+          "sms_enable": "SMS via GOIP4",
+          "sms_line": "GOIP4 line",
+          "sms_phone": "Phone number",
+          "sms_msg_arm": "Message on arm",
+          "sms_msg_disarm": "Message on disarm",
+          "sms_cooldown": "Cooldown (s)",
+          "sms_object_filter": "Object ID filter (optional)"
+        }
+      }
+    }
+  }
+}

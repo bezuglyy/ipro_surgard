@@ -1,0 +1,13 @@
+{
+  "domain": "ipro_surgard",
+  "name": "IPRO SurGard",
+  "version": "1.0.9",
+  "documentation": "https://github.com/bezuglyy/ipro_surgard",
+  "issue_tracker": "https://github.com/bezuglyy/ipro_surgard/issues",
+  "config_flow": true,
+  "iot_class": "local_push",
+  "codeowners": [
+    "@bezuglyy"
+  ],
+  "integration_type": "hub"
+}

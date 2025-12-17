@@ -1,0 +1,64 @@
+{
+  "title": "IPRO SurGard",
+  "config": {
+    "step": {
+      "user": {
+        "title": "IPRO SurGard",
+        "description": "Приём сообщений Contact ID / SurGard по TCP и автосоздание сущностей."
+      }
+    },
+    "abort": {
+      "already_configured": "Интеграция уже настроена."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Настройки IPRO SurGard",
+        "data": {
+          "listen_host": "Listen host",
+          "listen_port": "Listen port",
+          "max_zones": "Max zones",
+          "offline_timeout": "Offline timeout (s)",
+          "sms_enable": "Enable SMS via GOIP4",
+          "sms_line": "GOIP4 line",
+          "sms_phone": "Phone number",
+          "sms_msg_arm": "Message on arm",
+          "sms_msg_disarm": "Message on disarm",
+          "sms_cooldown": "SMS cooldown (s)",
+          "sms_object_filter": "Object ID filter (optional)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "last_event_text": {
+        "name": "Last event"
+      },
+      "last_event_raw": {
+        "name": "Last event (raw)"
+      },
+      "last_event_code": {
+        "name": "Last event code"
+      }
+    },
+    "binary_sensor": {
+      "connection": {
+        "name": "Connection"
+      },
+      "alarm": {
+        "name": "Alarm"
+      },
+      "fire": {
+        "name": "Fire"
+      },
+      "panic": {
+        "name": "Panic"
+      },
+      "armed": {
+        "name": "Armed"
+      }
+    }
+  }
+}

@@ -2,7 +2,5 @@
   "name": "IPRO SurGard",
   "content_in_root": false,
   "render_readme": true,
-  "domains": [
-    "ipro_surgard"
-  ]
+  "homeassistant": "2025.1.0"
 }
